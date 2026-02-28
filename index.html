@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NURETTIN AKSOY | CV & Portfolio</title>
+  <meta name="description" content="NURETTIN AKSOY — CV ve GitHub projeleri. C#/.NET odaklı geliştirici." />
+  <meta name="theme-color" content="#0b0f1a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="header">
+    <a class="brand" href="#top" aria-label="Ana sayfa">NA</a>
+
+    <nav class="nav">
+      <a href="#about">CV</a>
+      <a href="#projects">Projeler</a>
+      <a href="#contact">İletişim</a>
+    </nav>
+
+    <button id="themeBtn" class="iconBtn" type="button" aria-label="Tema değiştir">
+      <span class="icon">☾</span>
+    </button>
+  </header>
+
+  <main id="top" class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="heroLeft">
+        <p class="pill reveal">👋 Merhaba, ben</p>
+        <h1 class="reveal" style="--d: 0.02s">NURETTIN AKSOY</h1>
+
+        <p class="sub reveal" style="--d: 0.05s">
+          <span class="typing" data-typing='["C# / .NET odaklı geliştirici", "REST API • Git • Web", "AI entegrasyonlu yan projeler"]'></span>
+        </p>
+
+        <div class="ctaRow reveal" style="--d: 0.08s">
+          <a class="btn primary" href="#projects">Projeleri gör</a>
+          <a class="btn" href="assets/cv.docx" download>CV indir (DOCX)</a>
+          <a class="btn" href="https://github.com/mrreesee" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+
+        <div class="miniStats reveal" style="--d: 0.1s">
+          <div class="stat">
+            <div class="statNum" id="repoCount">—</div>
+            <div class="statLbl">Repo</div>
+          </div>
+          <div class="stat">
+            <div class="statNum" id="followerCount">—</div>
+            <div class="statLbl">Follower</div>
+          </div>
+          <div class="stat">
+            <div class="statNum" id="lastUpdated">—</div>
+            <div class="statLbl">Son güncelleme</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="heroRight reveal" style="--d: 0.06s">
+        <div class="card profileCard">
+          <div class="avatar">
+            <img src="assets/profile.jpg" alt="NURETTIN AKSOY profil fotoğrafı" />
+          </div>
+          <div class="profileText">
+            <h3>Özet</h3>
+            <p>Recently graduated from Siliconmade Academy's software development program, I have built a solid foundation in software engineering, focusing primarily on C#, .NET, and core web technologies including HTML, CSS, and JavaScript. My practical experience extends beyond standard coursework; I have actively developed side projects integrating Artificial Intelligence, which has significantly enhanced my problem-solving abilities and adaptability to emerging tech trends. As an entry-level developer with a strong drive to learn and grow, I am highly motivated to contribute to innovative software solutions. I am eager to join a dynamic environment where I can apply my foundational skills, continuously develop my professional expertise, and make a meaningful impact.</p>
+
+            <div class="chips">
+              <span class="chip">C#</span><span class="chip">.Net</span><span class="chip">Javascript</span><span class="chip">Html5</span><span class="chip">Css3</span><span class="chip">Rest Api</span><span class="chip">Git</span><span class="chip">Ai Integration</span>
+            </div>
+
+            <p class="muted" style="margin-top:10px">English: Intermediate, Turkish: Native</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="about" class="section">
+      <div class="sectionHead reveal">
+        <h2>CV</h2>
+        <p>CV dokümanından alınmış özet bilgiler.</p>
+      </div>
+
+      <div class="grid2">
+        <article class="card reveal">
+          <h3>Yetenekler</h3>
+          <div class="chips" style="margin-top:10px">
+            <span class="chip">C#</span><span class="chip">.Net</span><span class="chip">Javascript</span><span class="chip">Html5</span><span class="chip">Css3</span><span class="chip">Rest Api</span><span class="chip">Git</span><span class="chip">Ai Integration</span>
+          </div>
+
+          <div class="hr"></div>
+
+          <h3>İletişim</h3>
+          <p class="muted" style="margin:10px 0 0">+90 507 107 07 52 ● nurettinaksy@protonmail.com ● linkedin.com/nurettinaksy/</p>
+          <p class="muted" style="margin:8px 0 0">github.com/mrreesee ● 11.05.1001 ● ANTALYA, Türkiye</p>
+        </article>
+
+        <article class="card reveal" style="--d: 0.03s">
+          <h3>Eğitim</h3>
+          <div class="hr"></div>
+
+          <div class="edu">
+            <div class="eduTop">
+              <div class="eduSchool">Siliconmade Academy</div>
+              <div class="eduYear">2021 – 2023</div>
+            </div>
+            <ul class="list">
+              <li>360° Lead Software Development (16.09.2022 – 11.01.2023)</li>
+              <li>Backend Development (18.04.2022 – 17.08.2022)</li>
+              <li>Fundamentals of Programming (14.01.2022 – 03.03.2022)</li>
+            </ul>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="edu">
+            <div class="eduTop">
+              <div class="eduSchool">Istanbul University</div>
+              <div class="eduYear">2016 – 2021</div>
+            </div>
+            <p class="muted" style="margin-top:10px">Underwater Technologies / Bachelor of Science</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="grid2" style="margin-top:14px">
+        <article class="card reveal">
+          <h3>Sertifikalar</h3>
+          <ul class="list" style="margin-top:10px">
+            <li>Backend Development Certificate of Achievement, Siliconmade Academy Devam Ediyor.</li>
+            <li>Fundamentals of Programming Certificate of Achievement, Siliconmade Academy 05.11.2025</li>
+          </ul>
+        </article>
+
+        <article class="card reveal" style="--d: 0.03s">
+          <h3>Referans</h3>
+          <details class="details">
+            <summary>Görüntüle</summary>
+            <p class="muted" style="margin-top:10px">Serkan Kilickap: Codejust Head of Engineering, +90 532 575 16 69, baris.erdemir@codejust.net</p>
+          </details>
+          <p class="muted" style="margin-top:12px">
+            Not: İstersen referans bölümünü tamamen kaldırabiliriz veya sadece “Referanslar istek üzerine paylaşılır” yazabiliriz.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="sectionHead reveal">
+        <h2>Projeler</h2>
+        <p>GitHub profilindeki repolar otomatik çekilir ve burada listelenir.</p>
+      </div>
+
+      <div class="toolbar reveal">
+        <input id="projectSearch" class="input" type="search" placeholder="Projelerde ara (ör: .NET, TypeScript, SignalR)" />
+        <select id="projectFilter" class="select" aria-label="Filtre">
+          <option value="all">Hepsi</option>
+          <option value="featured">Öne çıkanlar</option>
+          <option value="dotnet">.NET / C#</option>
+          <option value="web">Web</option>
+          <option value="tools">Tooling</option>
+        </select>
+      </div>
+
+      <div id="projectsGrid" class="cards3"></div>
+
+      <div class="note reveal">
+        <span class="dot"></span>
+        <p>
+          İpucu: Repo açıklaması (Description), Topics ve demo linki (Homepage) eklersen kartlar daha “ürün gibi” görünür.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="sectionHead reveal">
+        <h2>İletişim</h2>
+        <p>Kısa, net ve tek tık.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card reveal">
+          <h3>Hızlı bağlantılar</h3>
+          <div class="links">
+            <a class="linkBtn" href="https://github.com/mrreesee" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="linkBtn" href="mailto:nurettinaksy@protonmail.com">Email</a>
+            <a class="linkBtn" href="https://linkedin.com/nurettinaksy/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+          <p class="muted">İstersen buraya “PDF CV” butonu da ekleriz.</p>
+        </div>
+
+        <div class="card reveal" style="--d: 0.03s">
+          <h3>Mini mesaj</h3>
+          <p class="muted">
+            Yeni fırsatlar, freelance işler veya proje konuşmak için mail atabilirsin.
+          </p>
+          <div class="hr"></div>
+          <a class="btn primary" href="mailto:nurettinaksy@protonmail.com?subject=Merhaba%20NURETTIN">Mail gönder</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> NURETTIN AKSOY — GitHub Pages</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
