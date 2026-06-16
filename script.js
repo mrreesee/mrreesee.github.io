@@ -98,7 +98,7 @@ async function fetchJSON(url){
 function formatDate(iso){
   if (!iso) return "—";
   const d = new Date(iso);
-  return d.toLocaleDateString("tr-TR", { year:"numeric", month:"short", day:"2-digit" });
+  return d.toLocaleDateString("en-GB", { year:"numeric", month:"short", day:"2-digit" });
 }
 
 function guessCategory(repo){
@@ -131,7 +131,7 @@ function projectCard(repo){
   el.dataset.name = name;
   el.dataset.cat = guessCategory(repo);
 
-  const desc = repo.description || "Açıklama eklenmemiş (repo About/Description doldurulabilir).";
+  const desc = repo.description || "No description added yet (a repo About/Description can be filled in).";
   const topics = (repo.topics || []).slice(0, 4);
   const homepage = repo.homepage && repo.homepage.startsWith("http") ? repo.homepage : "";
   const stars = typeof repo.stargazers_count === "number" ? repo.stargazers_count : 0;
@@ -140,10 +140,10 @@ function projectCard(repo){
     <h3 class="projectName">${escapeHtml(repo.name)}</h3>
 
     <div class="badges" style="margin-top:10px">
-      ${isFeatured ? `<span class="badge">Öne Çıkan</span>` : ``}
+      ${isFeatured ? `<span class="badge">Featured</span>` : ``}
       ${repo.language ? `<span class="badge">${escapeHtml(repo.language)}</span>` : ``}
       <span class="badge">★ ${stars}</span>
-      <span class="badge">Güncellendi: ${formatDate(repo.updated_at)}</span>
+      <span class="badge">Updated: ${formatDate(repo.updated_at)}</span>
     </div>
 
     <p class="projectDesc">${escapeHtml(desc)}</p>
@@ -183,7 +183,7 @@ function renderProjects(){
   if (!filtered.length){
     const empty = document.createElement("div");
     empty.className = "note";
-    empty.innerHTML = `<span class="dot"></span><p>Eşleşen proje bulunamadı.</p>`;
+    empty.innerHTML = `<span class="dot"></span><p>No matching projects found.</p>`;
     els.projectsGrid.appendChild(empty);
     return;
   }
@@ -216,7 +216,7 @@ loadGitHub().catch(err => {
   els.projectsGrid.innerHTML = `
     <div class="note">
       <span class="dot"></span>
-      <p>GitHub verileri çekilemedi. (Rate limit olabilir.) Biraz sonra tekrar deneyin.</p>
+      <p>Couldn't load GitHub data (possibly rate-limited). Please try again shortly.</p>
     </div>
   `;
 });
